@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="padrao.css" />
+	<meta charset="utf-8" />
+    <script>
+        function produto(nome, img, preco) {
+            document.writeln("<div class=\"caixa1\">");
+            document.writeln("<center>");
+            document.writeln("<img src=" + img + " width=\"80%\"><br/>");
+            document.writeln(nome + "<br/>");
+            document.writeln("R$: " + preco + " por metro.");
+            document.writeln("</center>");
+            document.writeln("</div>");
+        }
+    </script>
+</head>
+<body bgcolor="blue">
+    <script>
+        produto("Cabo Coaxial", "imagens/coaxial.jpg", 6.50);
+        produto("Cabo B2", "imagens/coaxial.jpg", 2.50);
+        produto("Laisa", "imagens/coaxial.jpg", 1500.99);
+        produto("Cabo Coaxial", "imagens/coaxial.jpg", 6.50);
+        produto("Cabo Coaxial", "imagens/coaxial.jpg", 6.50);
+        produto("Cabo Coaxial", "imagens/coaxial.jpg", 6.50);
+        produto("Cabo Coaxial", "imagens/coaxial.jpg", 6.50);
+        produto("Cabo Coaxial", "imagens/coaxial.jpg", 6.50);
+    </script>
+    <input type="button" class="botao" value="Pagina Anterior" />
+    <input type="button" class="botao" value="Proxima Pagina"/>
+</body>
+</html>

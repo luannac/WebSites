@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+            <label>Nome Completo:</label>
+            <input type="text"name="nome" id="nome" required />
+            <label>Endereço:</label>
+            <input type="text"name="endereco" id="endereco" required />
+            <label>E-mail:</label>
+            <input type="text"name="email" id="email" required />
+            <label>Senha:</label>
+            <input type="password"name="senha"id="senha" required />
+            <label>
+                <input type="submit"id="bt_enviar"value="Enviar" />
+                <input type="reset"id="bt_limpar"value="Limpar" />
+            </label>
+            <label>URL:</label>
+            <input type="url" name="url" id="url" required />
+            <label>Cor:</label>
+            <input type="color" name="color" id="color" required />
+            <label>Numero:</label>
+            <input type="number" nome="numero" id="numero" value="12.4" step="0.2" min="0" max="20" required />
+            <label>Numero com Range:</label>
+            <input type="range" name="numero" id="numero" step="0.2" min="0" max="20" required />
+            <label>Data de Nascimento:</label>
+            <input typeof="date" name="dataNascimento" id="dataNascimento" required />
+            <label>Hora:</label>
+            <input type="time" name="hora" id="hora" required />
+            <label>Mês:</label>
+            <input type="month" name="mes" id="mes" required />
+            <label>Ano:</label>
+            <input type="week" name="semana" id="semana" required />
+            <label>Data Local:</label>
+            <input type="datetime-local" name="diahora" id="diahora" required />
+        </fieldset>
+    </form>
+    <form action=""method="POST">
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+            <label>Deixe sua sugestão</label>
+            <textarea cols="70"rows="10"name="sugestao"id="sugestao"maxlegth="300"placeholder="Sua sugestão é importante">
+                 
+            </textarea>
+        </fieldset>
+    </form>
+    <form action=""method="POST">
+        <fieldset>
+            <legend>Campo Oculto</legend>
+            <input type="hidden"name="ip"value="ip" />
+        </fieldset>
+    </form>
+    <form action="" method="POST" enctype="multpart/form-data">
+        <fieldset>
+            <legend>FILE</legend>
+            <input type="file" name="foto" accept="image/*" />
+        </fieldset>
+    </form>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Select</legend>
+            <select name="regiao"id="regiao">
+                <option value="norte">Norte</option>
+                <option value="nordeste">Nordeste</option>
+                <option value="centro-oeste">Centro-Oeste</option>
+                <option value="sudeste">Sudeste</option>
+                <option value="sul">Sul</option>
+            </select>
+        </fieldset>
+    </form>
+
+
+
+</body>
+</html>
