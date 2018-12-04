@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="portuguese">
+<head>
+    <title> Fale Conosco </title>
+
+    <!-- JAVA SCRIPT -->
+    <script language="JavaScript">
+        // INICIO DA FUNÇÃO CHECA_FORMULARIo
+        function checa(verificacao) {
+
+            if (verificacao.nome.value == "") {
+                alert("Por favor, Coloque seu nome");
+                return (false);
+            }
+
+            if (verificacao.mensagem.value == "") {
+                alert("Por favor, Coloque sua Mensagem");
+                return (false);
+            }
+
+          // VERIFICA CAMPO EMAIL
+           if (verificacao.email.value == "") {
+               alert("O campo E-mail esta vazio");
+               verificacao.email.focus();
+               return (false);
+           }
+
+           if (verificacao.email.value.indexOf("@", 0) == -1) {
+               alert("O email é inválido");
+               verificacao.email.focus();
+               return (false);
+           }
+            
+           if (verificacao.email.value.indexOf(".", 0) == -1) {
+               alert("O email é inválido");
+               verificacao.email.focus();
+               return (false);
+           }
+
+        }
+    </script>
+
+</head>
+<body>
+    <!-- FALE CONOSCO-->
+    <form onsubmit="return checa(this)" name="verificacao" action="#" method="post">
+        <div align="center">
+            <fieldset style="width:20%; height:20%;">
+                <legend> Fale Conosco </legend>
+                <table align="left" cellspacing="5">
+                    <tr>
+                        <td> Nome: </td>
+                        <td> <input type="text" size="15" name="nome" /> </td>
+                    </tr>
+
+                    <tr>
+                        <td> E-mail: </td>
+                        <td> <input type="text" size="15" name="email" /></td>
+                    </tr>
+
+                    <tr>
+                        <td> Mensagem: </td>
+                        <td> <textarea name="mensagem" rows="5" cols="20" wrap="virtual"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input type="submit" name="enviar"  value="Enviar" /> </td>
+
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+    </form>
+
+
+</body>
+</html>
