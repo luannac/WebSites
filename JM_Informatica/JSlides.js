@@ -1,53 +1,59 @@
-﻿var titulos = Array('Soluções de Hardware', 'Soluções de Software', 'Soluções de Rede',
-        'Sistema para controle comercial', 'Soluções em Suprimentos', 'Soluções de Hardware', 'Com Contrato', 'Sem Contrato');
-var texto = array("Assistência Técnica Especializada em Informática<br>Venda de Equipamentos", "Sistemas Operacionais<br>Aplicativos<br>Anti – Vírus<br>E-mails - Correio Eletrônico",
-     "Dados: Configuração, cabeamento, climpagem", "- Vicommerce: Frente de caixa (açougues, bares, restaurantes, mini mercearias.<br>- Arpa Sistemas:Fábricas, NFe, controle de estoque, fincanceiro, emissão de boletos, entre outros.",
-    "Cartuchos de Toner<br>Remanufaturados<br>Novos Compatíveis", "Assistência Técnica Especializada em Informática Venda de Equipamentos",
-    "Avulso - Valor por chamado estabelecido em contrato.<br>Mensal - Valor Fixo de Mão de Obra independente do número de chamadas.", "Avulso - Sem compromisso.");
+﻿function carregarConteudo(j) {
+    botaoProx ="<div id=\"botaoProximo\" style=\"background-image: url(&quot;f2.jpg&quot;);\">"+
+     "<div class=\"seta-5\" onclick=\"proximo()\"><i></i>"+
+    "</div> "+
+    "<div id=\"botaoAnterior\" style=\"background-image: url(&quot;f2.jpg&quot;);\">"+
+    "<div class=\"seta-5\" onclick=\"anterior()\"><i></i>"+
+   "</div>";
 
-function preload() {  
-    textQtde = titulos.length; 
-
-   /* for (i = 0; i < imgQtde; i++) {/* for para contar as imagens *
-        var preloadimg = new Image();
-        preloadimg.src = imgs[i];
-    }*/
-
+    if(j==1){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Soluções de Hardware</h1><br>Assistência Técnica Especializada em Informática<br>Venda de Equipamentos";
+    }
+    if(j==2){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Soluções de Software</h1><br>Sistemas Operacionais<br>Aplicativos<br>Anti – Vírus<br>E-mails - Correio Eletrônico";
+    }
+    if(j==3){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Soluções de Rede</h1><br>Dados: Configuração, cabeamento, climpagem";
+    }
+    if(j==4){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Sistema para controle comercial</h1><br> Vicommerce: Frente de caixa (açougues, bares, restaurantes, mini mercearias.<br>- Arpa Sistemas:Fábricas, NFe, controle de estoque, fincanceiro, emissão de boletos, entre outros.";
+    }
+    if(j==5){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Soluções em Suprimentos</h1><br>Cartuchos de Toner<br>Remanufaturados<br>Novos Compatíveis";
+    }
+    if(j==6){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Soluções de Hardware</h1><br>Assistência Técnica Especializada em Informática Venda de Equipamentos";
+    }
+    if(j==7){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Com Contrato</h1><br>Avulso - Valor por chamado estabelecido em contrato.<br>Mensal - Valor Fixo de Mão de Obra independente do número de chamadas.";
+    }
+    if(j==8){
+        document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Sem Contrato</h1><br>Avulso - Sem compromisso.";
+    }
 }
-function carregarConteudo(j) {
-    document.getElementById('divSServicos').innerHTML = "<h1>" + titulos[j] + "</h1>"+"<br>"+texto[j];
-    
-}
-function iniciarSlide() {/* função para carregar as fotos e iniciar a transição */
-    preload();
-    max = textQtde; /* o maximo de fotos é 2 */
-    min = 1; /* o minimo de fotos é 1, quase sempre vai ser 1 */
-    fi = min; /* fi foi atribuida min que é 1 */
-    tr = true;/* criado a variavel tr e atribuida true, como se fosse um boolean */
-    carregarConteudo(1);/* criada a função logo abaixo e passado para carregar uma imagem */
-   // document.getElementById("moldura").addEventListener("transitionend", fimTr);
-    //tr = setInterval(trocaFoto, 4000);/* tr quem antes era um boolean, agora foi
-		//				atribuido o metodo de intervalo e é passo a função que esta logo abaixo e o 4000 conta os segundos, 
-			//			ou seja, 1000 é o equivalente a 1 segundo.*/
+function iniciarSlide() {
+    max = 8;
+    min = 1;
+    fi = min; 
+    tr = true;
+    carregarConteudo(1);
+    document.getElementById("divSServicos").addEventListener("transitionend", fimTr);
+    tr = setInterval(trocaText, 4000);
 }
 
-function trocaFoto() {/* função para fazer a troca de imagens automatico */
-
+function trocaText() {
     tr = false;
     fi++;
     if (fi > max) {
         fi = min;
     }
-    carregarFoto("f" + fi + ".jpg");
-
+   carregarConteudo(fi);
 }
 
 function fimTr() {
     tr = true;
 
 }
-
-
 
 function proximo() {
     if (tr) {
@@ -56,8 +62,7 @@ function proximo() {
         if (fi > max) {
             fi = min;
         }
-        carregarFoto("f" + fi + ".jpg");
-
+        carregarConteudo(fi);
     }
 }
 
@@ -68,7 +73,6 @@ function anterior() {
         if (fi < min) {
             fi = max;
         }
-        carregarFoto("f" + fi + ".jpg");
-
+        carregarConteudo(fi);
     }
 }

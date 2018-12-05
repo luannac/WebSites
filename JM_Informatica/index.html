@@ -7,11 +7,44 @@
     <script type="text/javascript" src="JSlides.js"></script>
 </head>
 <body onload="iniciarSlide()">
+    <nav  id="topnav"><!--MENU COM BOTOES-->
+        <ul>
+            <li>
+                <!--Home-->
+                <a href="#divHeader" title="Home" >Home</a>
+            </li>
+            <li>
+                <!--Serviços-->
+                <a href="#divSServicos" title="Serviços">Serviços</a>
+            </li>
+            <li>
+                <!--Empresa-->
+                <a href="#divSEmpresa" title="Empresa" >Empresa</a>
+            </li>
+            <li>
+                <!--Ordem de Serviço-->
+                <a href="#divOrdem" title="OrdemServiço" >Ordem de Serviço</a>
+            </li>
+            <li>
+                <!--Navegação-->
+                <a href="#divNavegacao" title="Navegação" >Navegação</a>
+            </li>
+            <li>
+                <!--Downloads-->
+                <a href="#divDownloads" title="Downloads" >Downloads</a>
+            </li>
+            <li>
+                <!--Contato-->
+                <a href="" title="Contato" >Contato</a>
+            </li>
+        </ul>
+    </nav>
+
     <!--Primeira Pagina-->
     <header class="divHeader">
         
         <div class="divLogo">
-            <img src="imagens/logotipo.png" class="imgLogo" />
+            <img src="imagens/logotipo.png" id="imgLogo" />
             <p>
                 JM Informática
             </p>
@@ -43,38 +76,6 @@
             </div>
         
     </header>
-    <nav  id="topnav"><!--MENU COM BOTOES-->
-            <ul>
-                <li>
-                    <!--Home-->
-                    <a href="" title="Home" >Home</a>
-                </li>
-                <li>
-                    <!--Serviços-->
-                    <a href="" title="Serviços">Serviços</a>
-                </li>
-                <li>
-                    <!--Empresa-->
-                    <a href="" title="Empresa" >Empresa</a>
-                </li>
-                <li>
-                    <!--Ordem de Serviço-->
-                    <a href="" title="OrdemServiço" >Ordem de Serviço</a>
-                </li>
-                <li>
-                    <!--Contato-->
-                    <a href="" title="Contato" >Contato</a>
-                </li>
-                <li>
-                    <!--Localização-->
-                    <a href="" title="Localização" >Localização</a>
-                </li>
-                <li>
-                    <!--Downloads-->
-                    <a href="" title="Downloads" >Downloads</a>
-                </li>
-            </ul>
-    </nav>
 
     <!--Serviços-->
     <section id="divSServicos">
@@ -84,53 +85,65 @@
     <!--Empresa-->
     <section id="divSEmpresa">
         <div id="divEmpresaApresentacao">
+            <h1>Quem Somos:</h1>
             <h1>JM Informática</h1>
             <p>
-                A JM INFORMATICA foi criada para fornecer soluções de tecnologia de informação e facilitar o acesso das empresas aos conhecimentos,
-                 produtos e serviços que têm sido desenvolvidos diariamente nesse processo relâmpago que é o mundo da informática. Contamos hoje com
-                 profissionais, fornecedores e parceiros qualificados e capacitados para oferecer produtos e serviços de qualidade, fazendo com que 
-                seus clientes consigam redução de custo, mais eficiência através do aumento da produtividade e mais confiabilidade na realização dos 
-                seus processos e procedimentos internos e alcancem a excelência empresarial num mercado cada vez mais competitivo. Contamos com laboratório 
-                próprio, atendemos in company (externo), de forma eficiente e ágil, retiramos e entregamos!
+            A JM INFORMATICA foi criada para fornecer soluções de tecnologia de informação e facilitar o acesso das empresas aos conhecimentos,
+            produtos e serviços que têm sido desenvolvidos diariamente nesse processo relâmpago que é o mundo da informática. Contamos hoje com
+            profissionais, fornecedores e parceiros qualificados e capacitados para oferecer produtos e serviços de qualidade, fazendo com que 
+            seus clientes consigam redução de custo, mais eficiência através do aumento da produtividade e mais confiabilidade na realização dos 
+            seus processos e procedimentos internos e alcancem a excelência empresarial num mercado cada vez mais competitivo. Contamos com laboratório 
+            próprio, atendemos in company (externo), de forma eficiente e ágil, retiramos e entregamos!
             </p>
-            <img src="imagens/empresa.png" width="60%"/>
+            <center>
+                <img src="imagens/empresa.png" width="50%" />
+            </center>
         </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.8668792109399!2d-47.079358170758184!3d-22.896120663622035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c6200daea43f%3A0x4fabe8d91fff8afc!2sJM+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1544015866725"  frameborder="0" id="mapEmpresa" allowfullscreen></iframe>
+        <span id="mapEmpresa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.8668792109399!2d-47.079358170758184!3d-22.896120663622035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c6200daea43f%3A0x4fabe8d91fff8afc!2sJM+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1544015866725"  frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+        </span>>
     </section>
 
     <!--Ordem de Serviços-->
-    <section>
-        <div>
-
-        </div>
+    <section id="divOrdem">
+        <h1>Ordem de Serviço</h1>
+        <p>Ligue para nosso suporte para receber mais informações<br>
+            Telefones: (19) 32043-1907 / 3027-5381 / 9.9306-3748<br>
+            Email: j.mvariedades@hotmail.com - contato@jminformatica.com</p>
+        
     </section>
 
-    <!--Contato-->
-    <section>
-        <div>
+    <!--Navegação-->
+    <section id="divNavegacao">
+        <cente>
+            <h1>Navegação</h1>
+        </cente>
+        <ul>
 
-        </div>
-    </section>
-
-    <!--Localização-->
-    <section>
-        <div>
-
-        </div>
+        </ul>
+        <iframe id="frame"></iframe>
     </section>
 
     <!--Downloads-->
-    <section>
-        <div>
+    <section id="divDownloads">
+            <h1>Downloads:</h1>
+       
+            <a href="http://70.38.40.185/AA_v3.5.exe" target="_blank" class="divPartesDownloads">
+                <img src="imagens/ammyy.png" alt="Ammyy" width="100%" border="0"></a>
+                    
+            <a href="https://download.teamviewer.com/download/TeamViewer_Setup_pt.exe" target="_blank" class="divPartesDownloads">
+                <img src="imagens/team.png" alt="Team Viewer" width="100%" border="0"></a>
+                    
+            <a href="http://www.virtualarte.com.br/downloads/vicommerce_x64.exe" target="_blank" class="divPartesDownloads">
+                <img src="imagens/vincomerce.png" alt="vicommerce 64 bits" width="100%" border="0"></a>
 
-        </div>
+            <a href="http://www.virtualarte.com.br/downloads/vicommerce_x86.exe" target="_blank" class="divPartesDownloads">
+                <img src="imagens/vincomerce32bits.png" alt="vicommerce 86 bits" width="100%"  border="0"></a>
     </section>
 
     <!--Rodape-->
     <footer>
-        <div>
-
-        </div>
+        
     </footer>
 </body>
 </html>
