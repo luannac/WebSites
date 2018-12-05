@@ -17,22 +17,25 @@
 	for(i=0;i<imgQtde;i++){/* for para contar as imagens */
 		var preloadimg=new Image();
 		preloadimg.src=imgs[i];
-		}
 	}
 
-
-		function iniciarSlide(){/* função para carregar as fotos e iniciar a transição */
-			preload();
-			max=5; /* o maximo de fotos é 2 */
-			min=1; /* o minimo de fotos é 1, quase sempre vai ser 1 */
-			fi=min; /* fi foi atribuida min que é 1 */
-			tr=true;/* criado a variavel tr e atribuida true, como se fosse um boolean */
-			carregarFoto("f1.jpg");/* criada a função logo abaixo e passado para carregar uma imagem */
-			document.getElementById("moldura").addEventListener("transitionend",fimTr);
-			tr=setInterval(trocaFoto,4000);/* tr quem antes era um boolean, agora foi
-							atribuido o metodo de intervalo e é passo a função que esta logo abaixo e o 4000 conta os segundos, 
-							ou seja, 1000 é o equivalente a 1 segundo.*/
-		}
+	}
+	function carregarFoto(foto) {/* função para carregar a foto */
+	    document.getElementById("moldura").style.backgroundImage = "URL(" + foto + ")";/* pega o elemento div que 
+																				é a moldura e insere uma imgem de fundo  */
+	}
+	function iniciarSlide(){/* função para carregar as fotos e iniciar a transição */
+		preload();
+		max=5; /* o maximo de fotos é 2 */
+		min=1; /* o minimo de fotos é 1, quase sempre vai ser 1 */
+		fi=min; /* fi foi atribuida min que é 1 */
+		tr=true;/* criado a variavel tr e atribuida true, como se fosse um boolean */
+		carregarFoto("f1.jpg");/* criada a função logo abaixo e passado para carregar uma imagem */
+		document.getElementById("moldura").addEventListener("transitionend",fimTr);
+		tr=setInterval(trocaFoto,4000);/* tr quem antes era um boolean, agora foi
+						atribuido o metodo de intervalo e é passo a função que esta logo abaixo e o 4000 conta os segundos, 
+						ou seja, 1000 é o equivalente a 1 segundo.*/
+	}
 	
 		function trocaFoto(){/* função para fazer a troca de imagens automatico */
 	
@@ -51,10 +54,7 @@
 		}
 
 
-	function carregarFoto(foto){/* função para carregar a foto */
-		document.getElementById("moldura").style.backgroundImage="URL("+foto+")";/* pega o elemento div que 
-																				é a moldura e insere uma imgem de fundo  */
-  }
+
 	function proximo(){
 		if(tr){
 		tr=false;

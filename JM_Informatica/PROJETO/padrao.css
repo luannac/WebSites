@@ -1,0 +1,53 @@
+﻿html,body {
+    padding-top:2%;
+    padding-left:3%;
+    padding-right:3%;
+    position:relative;
+    background:#2F4F4F;
+}
+.texto{
+    font-family:Courier New;
+    font-size:30px;
+    margin-left:6%;
+    margin-right:0%;
+    color:white;
+}
+
+.produto{
+    font-family:Courier New;
+    font-size:15px;
+    margin-left:5%;
+    margin-right:0%;
+}
+.caixa{
+    padding-top:10px;
+    position:relative;
+    border-radius:10px;
+    float:left;
+    width:15%;
+    height:200px;
+    align-content:center;
+    margin:7%;
+
+    font-family:Courier New;
+    font-size:20px;
+
+    background:white; /* COR DE FUNDO */
+}
+.caixa1{
+    padding-top:1%;
+    height:350px;
+    width:250px;
+    border-radius:10px;
+    background:white;
+    float:left;
+    margin:20px;
+}
+.botao{
+    color:black;
+    width:35%;
+    height:15%;
+    margin-left:6%;
+    background:white;
+    float:left;
+}

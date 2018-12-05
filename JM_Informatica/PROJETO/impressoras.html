@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  
+    <meta charset="utf-8" />
+    <title> Produtos </title>
+    <link rel="stylesheet" type="text/css" href="padrao.css" />
+    <!-- FUNÇÃO PARA OS PRODUTO -->
+    <script>
+        function produto(botao,nome, img, preco) {
+            document.writeln("<div class=caixa1>");
+            document.writeln("<center>");
+            document.writeln("<br/>\<input type=\"button\"class=\"botao\" value=" + botao + ">")
+            document.writeln("<br/> <img src=" + img + " width=\"80%\"><br/>");
+            document.writeln(nome + "<br/>");
+            document.writeln("R$: " + preco);
+            document.writeln("</center>");
+            document.writeln("</div>");
+        }
+    </script>
+
+</head>
+<body>
+    <div class="texto">
+        Impressoras e Computadores de boa qualidade você encontra só aqui na JM INFORMÁTICA
+    </div>
+
+    <div class="texto">
+        <br /><br /><br />
+        <br /><br /><br />
+
+        <center> Impressoras </center>
+            </div>
+
+    <div class="produto">  
+        <script>
+            //IMPRESSORAS
+            produto("Comprar", "Multifuncional Jato de Tinta HP Deskjet 2050", "imgens/f2.jpg", 399.99,);
+            produto("Comprar"," Impressora EPSON EcoTank L380 com 4 frascos de 130ml de Tinta Original Inktec corante", "imgens/f3.jpg", 719.99);
+            produto("Comprar"," Impressora Portátil Epson PictureMate PM-525", "imgens/f4.jpg", 699.99);
+            produto("Comprar"," Multifuncional Canon Pixma MG2510 Jato de Tinta", "imgens/f5.jpg", 499.99);
+            produto("Comprar"," Impressora Epson EcoTank L4150", "imgens/f6.jpg", 979.99);
+            produto("Comprar"," Impressora HP DeskJet Ink Advantage 1115 - Branco", "imgens/f7.jpg", 599.99);
+            produto("Comprar"," Multifuncional Epson Expression XP-241 Jato de Tinta", "imgens/f8.jpg", 799.99);
+            produto("Comprar"," Impressora Epson EcoTank L120 Jato de Tinta", "imgens/f9.jpg", 899.99);
+            produto("Comprar"," Impressora Jato de Tinta HP 2676 Multifuncional Wireless Branca", "imgens/f10.jpg", 999.99);
+            produto("Comprar"," Multifuncional  Lulean", "imgens/f11.jpg", 3.999);
+        </script>
+              
+        <div class="texto">
+            <center> Computadores </center>
+        </div>
+        
+        <script>
+            //COMPUTADORES
+            produto("Comprar","Processador Intel Celeron, SO - Windows 10 Pro, Amazenamento 500GB, Memória 4 GB", "imgens/c1.png",782.65 );
+            produto("Comprar","Processador Intel Core i3, SO - Windows 10 Pro, Amazenamento 500GB, Memória 4 GB", "imgens/c2.png", 800.00);
+            produto("Comprar","Processador Intel Core i3, SO - Linux, Amazenamento 500GB, Memória 4 GB", "imgens/c3.png", 600.00);
+            produto("Comprar","Notebook de 15 polegadas, processador Intel® Pentium®, CinemaStream, CinemaSound e teclado alfanumérico em um design estiloso e diferenciado.","imgens/c4.png",2.163 );
+            produto("Comprar","PC Gamer - Processadores AMD Ryzen™,placas de vídeo prontas para realidade virtual (VR)", "imgens/c5.png", 3.449);
+            produto("Comprar","Desktop umtracompacto com diversas soluções de montagem - Processador i3", "imgens/c6.jpg", 2.931 );
+            produto("Comprar","Desktop umtracompacto com diversas soluções de montagem - Processador i5", "imgens/c7.png", 4.054);
+            produto("Comprar","Notebook gamer de 15, processadores Intel® de 8ª geração e design fino para você ter a melhor experiência imersiva de games.", "imgens/c8.png", 4.958 );
+            produto("Comprar","Desktop umtracompacto com diversas soluções de montagem e apenas 18,2 cm de altura e 3,6 cm de largura.", "imgens/c9.jpg", 1.798);
+            produto("Comprar","ll in one de 24 polegadas. Inclui Tela Infinita IPS FullHD. Perfeito para quem prefere telas maiores.", "imgens/c10.png", 3.913);
+        </script>
+    </div>
+</body>
+</html>

@@ -4,10 +4,12 @@
     <title>JM Informática - Assistência Técnica Especializada em Informática</title>
 	<meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="OnePage.css" />
+    <script type="text/javascript" src="JSlides.js"></script>
 </head>
-<body>
+<body onload="iniciarSlide()">
     <!--Primeira Pagina-->
     <header class="divHeader">
+        
         <div class="divLogo">
             <img src="imagens/logotipo.png" class="imgLogo" />
             <p>
@@ -41,44 +43,59 @@
             </div>
         
     </header>
-    <nav class="divNav"><!--MENU COM BOTOES-->
-            <!--Home-->
-            <input type="button" value="Home" class="buttonNav">
-            <!--Serviços-->
-            <input type="button" value="Serviços" class="buttonNav"/>
-            <!--Empresa-->
-            <input type="button" value="Empresa" class="buttonNav"/>
-            <!--Ordem de Serviço-->
-            <input type="button" value="Ordem de Serviço" class="buttonNav"/>
-            <!--Contato-->
-            <input type="button" value="Contato" class="buttonNav""/>
-            <!--Localização-->
-            <input type="button" value="Localização" class="buttonNav""/>
-            <!--Downloads-->
-            <input type="button" value="Downloads" class="buttonNav"/>
+    <nav  id="topnav"><!--MENU COM BOTOES-->
+            <ul>
+                <li>
+                    <!--Home-->
+                    <a href="" title="Home" >Home</a>
+                </li>
+                <li>
+                    <!--Serviços-->
+                    <a href="" title="Serviços">Serviços</a>
+                </li>
+                <li>
+                    <!--Empresa-->
+                    <a href="" title="Empresa" >Empresa</a>
+                </li>
+                <li>
+                    <!--Ordem de Serviço-->
+                    <a href="" title="OrdemServiço" >Ordem de Serviço</a>
+                </li>
+                <li>
+                    <!--Contato-->
+                    <a href="" title="Contato" >Contato</a>
+                </li>
+                <li>
+                    <!--Localização-->
+                    <a href="" title="Localização" >Localização</a>
+                </li>
+                <li>
+                    <!--Downloads-->
+                    <a href="" title="Downloads" >Downloads</a>
+                </li>
+            </ul>
     </nav>
 
     <!--Serviços-->
-    <section>
-        <div class="divSServicos">
-
-        </div>
+    <section id="divSServicos">
+        
     </section>
 
     <!--Empresa-->
-    <section>
-        <div class="divSEmpresa">
+    <section id="divSEmpresa">
+        <div id="divEmpresaApresentacao">
             <h1>JM Informática</h1>
-            <blockquote>
+            <p>
                 A JM INFORMATICA foi criada para fornecer soluções de tecnologia de informação e facilitar o acesso das empresas aos conhecimentos,
                  produtos e serviços que têm sido desenvolvidos diariamente nesse processo relâmpago que é o mundo da informática. Contamos hoje com
                  profissionais, fornecedores e parceiros qualificados e capacitados para oferecer produtos e serviços de qualidade, fazendo com que 
                 seus clientes consigam redução de custo, mais eficiência através do aumento da produtividade e mais confiabilidade na realização dos 
                 seus processos e procedimentos internos e alcancem a excelência empresarial num mercado cada vez mais competitivo. Contamos com laboratório 
                 próprio, atendemos in company (externo), de forma eficiente e ágil, retiramos e entregamos!
-            </blockquote>
-            <img />
+            </p>
+            <img src="imagens/empresa.png" width="60%"/>
         </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.8668792109399!2d-47.079358170758184!3d-22.896120663622035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c6200daea43f%3A0x4fabe8d91fff8afc!2sJM+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1544015866725"  frameborder="0" id="mapEmpresa" allowfullscreen></iframe>
     </section>
 
     <!--Ordem de Serviços-->
