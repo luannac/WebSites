@@ -35,7 +35,7 @@
             </li>
             <li>
                 <!--Contato-->
-                <a href="" title="Contato" >Contato</a>
+                <a href="#footer" title="Contato" >Contato</a>
             </li>
         </ul>
     </nav>
@@ -115,13 +115,61 @@
 
     <!--Navegação-->
     <section id="divNavegacao">
-        <cente>
-            <h1>Navegação</h1>
-        </cente>
-        <ul>
+        <div id="divNMenu">
+            <center>
+                <h1>Navegação</h1>
+            </center>
+            <ul>
+                <li>
+                    <a href="PROJETO/server.html" target="frame" title="">
+                        Windows Server
+                    </a>
+                </li>
+                <li>
 
-        </ul>
-        <iframe id="frame"></iframe>
+                <li>
+                    <a href="PROJETO/windows.html" target="frame" title="">
+                        Windows Desktop
+                    </a>
+                </li>
+                <li>
+                    <a href="PROJETO/acess.html" target="frame" title="">
+                        Pacote Office
+                    </a>
+                </li>
+                <li>
+                    <a href="PROJETO/adobe.html" target="frame" title="">
+                        Adobe
+                    </a>
+                </li>
+                <li>
+                    <a href="PROJETO/gestao.html" target="frame" title="">
+                        Gestão e Auditoria
+                    </a>
+                </li>
+                <li>
+                    <a href="PROJETO/calendario.html" target="frame" title="">
+                        Calendário
+                    </a>
+                </li>
+                <li>
+                    <a href="PROJETO/clientes.html" target="frame" title="">
+                        Cliente
+                    </a>
+                </li>
+                <li>
+                    <a href="PROJETO/parcerias.html" target="frame" title="">
+                        Parceria
+                    </a>
+                </li>
+                <li>
+                    <a href="PROJETO/formulario.html" target="frame" title="">
+                        Trabalhe conosco
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <iframe src="PROJETO/adobe.html" id="frame" name="frame"></iframe>
     </section>
 
     <!--Downloads-->
@@ -142,8 +190,59 @@
     </section>
 
     <!--Rodape-->
-    <footer>
-        
+    <footer id="footer">
+        <div id="divFRedesSociais">
+                <div>
+                    <img src="imagens/email.png" />
+                    <h1>E-mail:</h1>
+                    <p>contato@jminformatica.com</p>
+                </div>
+                <div>
+                    <img src="imagens/skype.png"  />
+                    <h1>Skype:</h1>
+                    <p> j.mvariedades@hotmail.com</p>
+                </div>
+                <div>
+                        <a href="https://www.facebook.com/junio.leite.3" target="_blank">
+                            <img src="imagens/facebook.png" />
+                        </a>
+                    <h1>Facebook:</h1>
+                    <p><a href="https://www.facebook.com/junio.leite.3" target="_blank">
+    Siga nos no facebook
+</a></p>
+                </div>
+        </div>
+        <div id="divFFaleConosco">
+            <form onsubmit="return checa(this)" name="verificacao" action="#" method="post">
+                <center>
+                    <h1>Fale Conosco:</h1>
+                    <table align="left" cellspacing="5" width="90%" height="100%">
+                        <tr>
+                            <td> Nome: </td>
+                            <td> <input type="text" size="50" name="nome" /> </td>
+                        </tr>
+
+                        <tr>
+                            <td> E-mail: </td>
+                            <td> <input type="text" size="50" name="email" /></td>
+                        </tr>
+
+                        <tr>
+                            <td> Mensagem: </td>
+                            <td> <textarea name="mensagem" rows="6" cols="40" wrap="virtual"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td> <input type="submit" name="enviar" value="Enviar" /> </td>
+
+                        </tr>
+                    </table>
+                </center>
+            </form>
+        </div>
+        <div id="divFSobre">
+            <p>Criado Por: Luann Campos e Laisa Araujo.</p>
+        </div>
     </footer>
 </body>
 </html>

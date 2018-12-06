@@ -1,10 +1,7 @@
 ﻿function carregarConteudo(j) {
     botaoProx ="<div id=\"botaoProximo\" style=\"background-image: url(&quot;f2.jpg&quot;);\">"+
      "<div class=\"seta-5\" onclick=\"proximo()\"><i></i>"+
-    "</div> "+
-    "<div id=\"botaoAnterior\" style=\"background-image: url(&quot;f2.jpg&quot;);\">"+
-    "<div class=\"seta-5\" onclick=\"anterior()\"><i></i>"+
-   "</div>";
+    "</div> ";
 
     if(j==1){
         document.getElementById('divSServicos').innerHTML = botaoProx+"<h1>Soluções de Hardware</h1><br>Assistência Técnica Especializada em Informática<br>Venda de Equipamentos";
@@ -76,3 +73,37 @@ function anterior() {
         carregarConteudo(fi);
     }
 }
+//JAVA SCRIPT
+        // INICIO DA FUNÇÃO CHECA_FORMULARIo
+        function checa(verificacao) {
+
+            if (verificacao.nome.value == "") {
+                alert("Por favor, Coloque seu nome");
+                return (false);
+            }
+
+            if (verificacao.mensagem.value == "") {
+                alert("Por favor, Coloque sua Mensagem");
+                return (false);
+            }
+
+            // VERIFICA CAMPO EMAIL
+            if (verificacao.email.value == "") {
+                alert("O campo E-mail esta vazio");
+                verificacao.email.focus();
+                return (false);
+            }
+
+            if (verificacao.email.value.indexOf("@", 0) == -1) {
+                alert("O email é inválido");
+                verificacao.email.focus();
+                return (false);
+            }
+            
+            if (verificacao.email.value.indexOf(".", 0) == -1) {
+                alert("O email é inválido");
+                verificacao.email.focus();
+                return (false);
+            }
+
+        }

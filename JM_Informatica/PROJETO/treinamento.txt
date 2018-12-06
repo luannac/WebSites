@@ -1,0 +1,6 @@
+Windows Server é um sistema operacional voltado para servidores e uso em empresas. Ele possui mais recursos de gerenciamento,
+ configurações para múltiplos usuários, maior poder de gerenciamento de memoria RAM, processador e recursos de rede. 
+
+O Windows Desktop é uma versão voltada para o usuário domestico, 
+ao qual não possui tanta necessidade de processamento, gerenciamento e recursos de rede
+

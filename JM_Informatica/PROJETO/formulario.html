@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 
     <title> Formulario </title>
@@ -173,10 +173,25 @@
         
     </script>
 
+    <style>
+        html, body {
+            background: rgba(0,0,0,1);
+            margin-top: 5%;
+          
+        }
+
+
+        .texto {
+            color: #ffffff;
+            font-family: Garamond;
+            font-size: 120%;
+            margin-right: 0px;
+        }
+    </style>
 </head>
 <body>
     <form onsubmit="return checa_formulario(this)" name="verificacao" action="#" method="post">
-        <div align="center">
+        <div align="center" class="texto">
             <fieldset align="left" style=" width:85%; height:80%;">
                 <legend>
                     IDENTIFICAÇÃO
@@ -314,7 +329,7 @@
         </div>
         <!-- ESCOLARIDADE -->
 
-        <div align="center">
+        <div align="center" class="texto">
             <fieldset align="left" style=" width:85%; height:80%;">
                 <legend> ESCOLARIDADE </legend>
                 <table cellspacing="6">
@@ -535,7 +550,7 @@
         </div>
 
         <!-- INFORMAÇÕES COMPLEMENTARES - Pessoas que possam fornecer informações -->
-        <<div align="center">
+        <<div align="center" class="texto">
             <fieldset align="left" style=" width:85%; height:80%;">
                 <legend> INFORMAÇÕES COMPLEMENTARES - Pessoas que possam fornecer informações </legend>
                 <table cellspacing="6">
@@ -614,7 +629,7 @@
         </div>
 
         <!-- INFORMAÇÕES ECONÔMICAS E FUNCIONAIS -->
-        <div align="center">
+        <div align="center" class="texto">
             <fieldset align="left" style=" width:85%; height:80%;">
                 <legend> INFORMAÇÕES ECONÔMICAS E FUNCIONAIS </legend>
                 <table cellspacing="6">

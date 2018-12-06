@@ -120,7 +120,7 @@ nav ul{
     background:cyan;
     left:0px;
     right:0px;
-    
+    text-align:center;
     height:82.5%;
 }
     /*************************************************************Empresa*/
@@ -233,6 +233,18 @@ nav ul{
         text-align: center;
         text-justify: auto;
     }
+    #divNMenu{
+        position:absolute;
+        left:0px;
+        width:5%;
+        height:80%;
+        color:white;
+    }
+    #divNMenu a{
+        list-style:none;
+        text-decoration:none;
+        color:white;
+    }
     #frame{
         position: absolute;
         width: 82%;
@@ -240,7 +252,7 @@ nav ul{
         top: 13%;
         left: 15%;
         border-radius: 10px;
-        background-color: #FF9900;
+        background: rgba(0,0,0,0);
     }
     /*************************************************************Downloads*/
     #divDownloads{
@@ -262,4 +274,59 @@ nav ul{
         height: 40%;
     }
 
-/*Footer*/
+/*******************************************************************Footer*/
+    #footer{
+        position: absolute;
+        background:rgba(0,0,0,1);
+
+        margin-top:250%;
+        left:0px;
+        right:0px;
+        height: 50%;
+        padding:2%;
+        text-align: center;
+        text-justify: auto;
+    }
+    #divFRedesSociais{
+        position:absolute;
+        margin-top:0%;
+        background:rgba(255,255,255,0.5);
+        width:50%;
+        height:58%;
+        border-radius:10px;
+        padding-top:4%;
+        color:white;
+    }
+    #divFRedesSociais a{
+        text-decoration:none;
+        color:white;
+    }
+    #divFFaleConosco{
+        position:absolute;
+        margin-top:0%;
+        right:2%;
+        background:rgba(255,165,0,0.5);
+        width:41%;
+        height:77%;
+        border-radius:10px;
+        padding-top:2%;
+        padding-left:2%;
+        padding-right:2%;
+        color:white;
+    }
+    #divFSobre{
+        position:absolute;
+        top:80%;
+        left:2%;
+        background-color:rebeccapurple;
+        width:50%;
+        border-radius:10px;
+        color:white;
+    }
+    #divFRedesSociais div{
+        float:left;
+        width:30%;
+    }
+    #footer img{
+        width:50%;
+    }
